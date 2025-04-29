@@ -75,7 +75,7 @@ const ReviewCard = ({
           width={32}
           height={32}
           alt={`${name}'s avatar`}
-          src={img}
+          src={"https://avatar.iran.liara.run/public"}
         />
         <div className="flex flex-col">
           <figcaption className="text-sm font-medium dark:text-white">

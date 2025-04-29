@@ -5,6 +5,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Button } from "../ui/button";
 
 const featuresData = [
   {
@@ -44,18 +45,18 @@ const ProblemShowCase = () => {
                 <p>Apple</p>
               </div>
             </div>
+          </div>
+          <div className="flex justify-center  w-3/4 m-auto gap-4">
             {featuresData.map(({ title, desc }, idx) => (
               <Card
                 key={idx}
-                className="w-3/4 my-3 flex items-center justify-between hover:bg-neutral-800 cursor-pointer"
+                className="hover:bg-neutral-800 cursor-pointer w-1/3 p-4" 
               >
                 <CardHeader>
-                  <CardTitle className="text-2xl">{title}</CardTitle>
+                  <CardTitle className="text-xl">{title}</CardTitle>
                   <CardDescription>{desc} </CardDescription>
                 </CardHeader>
-                <div className="m-4 p-2 px-4 bg-red-700 rounded">
-                  <p className="text-xs">Hard</p>
-                </div>
+                <Button className="bg-red-700 text-white">Hard</Button>
               </Card>
             ))}
           </div>
